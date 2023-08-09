@@ -1,0 +1,177 @@
+@import url(./partials/_variables.css);
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
+
+body {
+  background-color: var(--main);
+  margin-right: 0;
+  margin-left: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/* header */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--fill);
+}
+
+.logoBody {
+  display: flex;
+}
+
+.timerBody {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1em;
+}
+
+.timerBody p:first-of-type {
+  margin-right: 1em;
+}
+
+/* logo */
+.logoImg {
+  width: 3.5em;
+  margin-right: 1em;
+}
+
+.logoImg:hover {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logoBody a:last-of-type {
+  margin-top: 1em;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.timerBody {
+  margin-top: 0.9em;
+  color: var(--fill);
+}
+
+.timerBody a:first-child {
+  margin-right: 0.5em;
+  margin-bottom: 0;
+}
+
+.timerBody a:hover {
+  border-bottom: dashed;
+}
+
+.timerBody a:visited {
+  color: red;
+}
+
+/* END of header */
+
+/* THE TIMER */
+.wrapper {
+  width: 800px;
+  margin: 30px auto;
+  color: var(--fill);
+  text-align: center;
+}
+
+.wrapperText {
+  height: 200px;
+  width: 700px;
+  background-color: var(--sec);
+  margin: 0 auto;
+  border: 5px solid var(--fill);
+}
+
+.wrapperText p {
+  color: black;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+
+#seconds,
+#tens {
+  font-size: 2em;
+}
+
+button {
+  border-radius: 5px;
+  background: var(--fill);
+  color: var(--main);
+  border: solid 1px var(--fill);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 15px 10px;
+  width: 180px;
+  margin: 10px 0px;
+}
+
+button:hover {
+  transition: all 0.5s ease-in-out;
+  background: var(--fill);
+  border: solid 1px var(--fill);
+  color: red;
+}
+
+/* END of timer */
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+  margin-right: 3em;
+  margin-left: 3em;
+  padding-top: 1em;
+  border-top: solid var(--fill) 2px;
+}
+
+.footInfo {
+  display: flex;
+  padding-right: 1em;
+  border-right: solid var(--fill) 2px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footInfo a {
+  text-decoration: none;
+  color: black;
+}
+
+.footInfo a:hover {
+  text-decoration: none;
+  color: var(--fill);
+}
+
+.footImg {
+  width: 3em;
+  background-color: var(--sec);
+  mix-blend-mode: darken;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6em;
+}

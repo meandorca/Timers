@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./countdown.js" />
+    <link rel="stylesheet" href="/src/styles/countdown.css" />
+    <link rel="icon" type="image/x-icon" href="/src/logo/logo.png" />
+    <title>Countdown Timer</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navigation">
+          <div class="logoBody">
+            <a href="/src/index.html"
+              ><img
+                class="logoImg"
+                alt="logo of CPCS timers, "
+                src="/src/logo/logo.png"
+            /></a>
+            <a href="/src/index.html">CPCS Timers</a>
+          </div>
+
+          <div class="timerBody">
+            <a href="./countdown.html">Countdown</a>
+            <a href="/src/pages/stopwatch/stopwatch.html">Stopwatch</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <h1>Countdown Timer</h1>
+    <div id="container">
+      <p id="hour-label" class="label">Hours</p>
+      <p id="min-label" class="label">Minutes</p>
+      <p id="sec-label" class="label">Seconds</p>
+      <input id="hour" type="number" max="99" min="0" value="0" class="time" />
+      <p id="p1" class="semicolon">:</p>
+      <input
+        id="minute"
+        type="number"
+        max="60"
+        min="0"
+        value="0"
+        class="time"
+      />
+      <p id="p2" class="semicolon">:</p>
+      <input id="sec" type="number" max="60" min="0" value="0" class="time" />
+      <button id="start">Start</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <footer>
+      <div class="footInfo">
+        <p>Cyber Protection Consulting Services</p>
+        <p>(347)-973-4629</p>
+        <a href="mailto:address"
+          >support@cyberprotectionconsultingservices.com</a
+        >
+        <p>Contact Us !</p>
+      </div>
+
+      <div class="social">
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img
+            class="footImg"
+            alt="picture of insta logo a camera in the shade of blue"
+            src="/src/images/insta.png"
+        /></a>
+        <a href="https://www.tiktok.com/" target="_blank"
+          ><img
+            class="footImg"
+            alt="picture of tiktok logo the letter t in the shade of blue"
+            src="/src/images/tiktok.png"
+        /></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img
+            class="footImg"
+            alt="picture of the facebook logo the letter f in the shade of blue "
+            src="/src/images/facebook.png"
+        /></a>
+        <a href="https://www.twitter.com/" target="_blank"
+          ><img
+            class="footImg"
+            alt="picture of the twitter logo a flying bird in the shade of blue"
+            src="/src/images/twitter.png"
+        /></a>
+        <p>Follow Us!</p>
+      </div>
+    </footer>
+
+    <script src="./countdown.js"></script>
+  </body>
+</html>
